@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 27px;
+    letter-spacing: 0.8px;
+    color: #2d2300;
+    margin: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+figure {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+a {
+    text-decoration: none;
+    color: #45484C;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --lightyellow: #FDF4A8;
+    --yellow: #FFE400;
+    --blue: #6FBFEC;
+    --darkblue: #194369;
+    --black: #333333;
+    --pink:#E76779;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+.sp_btn{
+    display: none;
+}

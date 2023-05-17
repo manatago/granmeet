@@ -1,0 +1,705 @@
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.header_btn {
+    width: 252px;
+    height: 72px;
+    background: #E76779;
+    border-radius: 100px;
+}
+
+.header_btn a {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.logo {
+    width: 224px;
+}
+
+/* FIRST VIEW */
+.fv_inner {
+    background-image: url(../images/hero_img.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 700px;
+    height: 100vh;
+    position: relative;
+}
+
+.fv_h1 {
+    width: 480px;
+    height: auto;
+    margin-left: 25px;
+    padding-top: 125px;
+}
+
+.fv_h1 img,
+.fv_under img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.fv_h1,
+.fv_under {
+    max-height: 100%;
+}
+
+.fv_under {
+    position: absolute;
+    bottom: -2px;
+}
+
+
+/* NAYAMI */
+.nayami_inner {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.nayami h2 {
+    margin-bottom: 40px;
+}
+
+.nayami_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.nayami_list {
+    font-family: "Hiragino Maru Gothic Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.nayami_list li {
+    color: #fff;
+    background-color: var(--blue);
+    border-radius: 100px;
+    position: relative;
+    padding: 10px 50px;
+    margin-bottom: 4px;
+}
+
+.nayami_list li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-left-color: var(--blue);
+}
+
+.nayami_list li:first-child,
+.nayami_list li:last-child{
+    background-color: var(--pink);
+}
+.nayami_list li:first-child:after,
+.nayami_list li:last-child:after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-left-color: var(--pink);
+}
+
+
+.nayami_img {
+    width: 460px;
+}
+
+/* SERVICE */
+.service_inner {
+    text-align: center;
+}
+
+.service h2 {
+    width: 880px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.merit_box {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.merit_title {
+    color: #fff;
+    background-color: var(--blue);
+    font-size: 20px;
+    line-height: 29px;
+    width: 185px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+.merit:nth-child(1) .merit_title{
+    background-color: var(--pink);
+}
+.merit:nth-child(3) .merit_title{
+    background-color: var(--pink);
+}
+
+
+.merit_txt {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.service_txt {
+    width: 880px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.service_inner_box {
+    display: flex;
+    position: relative;
+    margin: 0 1.95vw;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service_box {
+    /* height: 454px; */
+    /* width: 31.25vw; */
+    background-color: #ECF5F8;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 6.25vw;
+}
+
+.service_box_img {
+    width: 240px;
+    height: auto;
+}
+
+.service h4 {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    letter-spacing: 2.4px;
+    color: #41A9E3;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.zoom_sp,
+.line_sp {
+    display: none;
+}
+
+.zoom_img,
+.line_img {
+    position: absolute;
+    width: 130px;
+}
+
+.zoom_img {
+    top: 50%;
+    left: 29vw;
+    transform: translate(-30%, -50%);
+}
+
+.line_img {
+    top: 50%;
+    right: 21vw;
+    transform: translate(-30%, -50%);
+}
+
+.service_box_title {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #E76779;
+    background: #FFFFFF;
+    border: 3px solid #ECF5F8;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: absolute;
+    top: -30px;
+}
+
+/* POINT */
+.point h2 {
+    text-align: center;
+    color: var(--pink);
+    font-size: 30px;
+    line-height: 32px;
+    /* identical to box height, or 107% */
+    text-align: center;
+    letter-spacing: 0.8px;
+    padding-top: 120px;
+    margin-bottom: 80px;
+}
+
+.point_inner {
+    text-align: center;
+}
+
+.point_box_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 11.7vw;
+}
+
+.point_box {
+    box-shadow: 4px 9px 30px rgba(248, 30, 95, 0.13);
+    height: 580px;
+    max-width: 460px;
+    border-radius: 20px;
+}
+
+.point_box_container .point_box:first-child .point_box_img {
+    height: 256px;
+    background-image: url(../images/point01.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.point_box_container .point_box:last-child .point_box_img {
+    height: 256px;
+    background-image: url(../images/point02.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.point .text {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    letter-spacing: 1.6px;
+    color: var(--pink);
+    margin-bottom: 8px;
+}
+
+.point h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    /* or 147% */
+    letter-spacing: 2.4px;
+    margin-bottom: 20px;
+}
+
+.point_box_textbox {
+    padding: 40px;
+    text-align: left;
+}
+
+.point_btn {
+    width: 316px;
+    height: 72px;
+    background: #E76779;
+    border-radius: 50px;
+    margin: 80px 0;
+
+}
+
+.point_btn a {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #F5F5F2;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------- INTRODUCTION INTRODUCTION INTRODUCTION--------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.introduction_inner {
+    background: #ECF5F8;
+    padding-bottom: 80px;
+}
+
+.introduction h2 {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 32px;
+    color: var(--pink);
+}
+
+.section_title {
+    padding-top: 80px;
+}
+
+
+.p-list-step-has-img:not(:last-child) .c-border {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 0;
+}
+
+.p-list-step-has-img:not(:last-child) .c-border:before,
+.p-list-step-has-img:not(:last-child) .c-border:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.p-list-step-has-img:not(:last-child) .c-border:before {
+    border-top: 20px solid var(--blue);
+}
+
+.p-list-step-has-img:not(:last-child) .c-border:before {
+    height: 0;
+    width: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid var(--blue);
+    bottom: -20px;
+    z-index: 1;
+}
+
+.p-list-step-has-img:not(:last-child) .c-border:after {
+    height: 0;
+    width: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #fff;
+    bottom: -16px;
+    z-index: 2;
+}
+
+.c-title {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 3px;
+}
+
+.c-heading {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--blue);
+}
+
+.c-border {
+    border: 3px solid var(--blue);
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.c-text {
+    margin-top: 12px;
+}
+
+.c-text p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.c-inner {
+    max-width: 864px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.introduction h2 {
+    margin-bottom: 60px;
+}
+
+/* HOUKOKU */
+.houkoku_inner {
+    padding: 60px 0;
+}
+
+.houkoku h2 {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 32px;
+    /* identical to box height, or 80% */
+    text-align: center;
+    color: #E76779;
+    margin-bottom: 40px;
+}
+
+.houkoku p {
+    text-align: center;
+    max-width: 880px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.houkoku h4 {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #E76779;
+    margin-bottom: 50px;
+}
+
+.houkoku_checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.houkoku_check_list {
+    gap: 30px;
+}
+
+.houkoku_text {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.houkoku_box {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.houkoku_check_list {
+    display: flex;
+}
+
+.houkoku_right {
+    width: 360px;
+}
+
+.section_btn{
+    padding: 50px 0;
+    text-align: center;
+    background: #ECF5F8;
+}
+
+.btn {
+    width: 360px;
+    height: 86px;
+    background: #E76779;
+    border-radius: 100px;
+}
+
+.btn a {
+    font-family: 'Hiragino Maru Gothic Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 43px;
+    text-align: center;
+    color: #F5F5F2;
+}
+
+/* ------------------------------------------- */
+/* PLAN */
+/* ------------------------------------------- */
+.plan h2 {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 32px;
+    /* identical to box height, or 80% */
+    text-align: center;
+    color: #E76779;
+    margin-bottom: 60px;
+}
+
+.plan .text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    text-align: center;
+    letter-spacing: 0.85px;
+    color: var(--pink);
+}
+
+.plan h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.plan h3 span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.plan_inner {
+    margin: auto;
+    text-align: center;
+    margin: 60px 0 100px;
+}
+
+.plan_box {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background: #F3FCFF;
+    background-blend-mode: color, normal;
+    border: 5px solid #AEE2DF;
+    border-radius: 25px;
+    padding: 30px 70px 30px 130px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.plan_box:last-child {
+    display: flex;
+    justify-content: center;
+    background: #FFF7FA;
+    background-blend-mode: color, normal;
+    border: 5px solid #E2AEC1;
+    border-radius: 25px;
+}
+
+.plan_box-l {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.plan_box_r {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plan_box_r_dwn {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.plan_box_r_up {
+    border: 1px solid #E76779;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.plan_box_r_up span {
+    font-size: 28px;
+    line-height: 43px;
+    /* identical to box height, or 152% */
+    text-align: center;
+    color: #E76779;
+}
+
+.plan_box_r_dwn-l,
+.plan_box_r_dwn-r {
+    border: 1px solid #E76779;
+    background: #FFFFFF;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    text-align: center;
+    color: #E76779;
+    padding: 30px 60px;
+}
+
+.plan_box {
+    margin-bottom: 50px;
+}
+
+
+/* FOOTER */
+.footer_inner {
+    text-align: center;
+    background: #ECF5F8;
+    padding: 60px 0;
+}
+
+.footer_inner .logo {
+    width: 384px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.footer_inner p:nth-child(3) {
+    margin-bottom: 60px;
+}
+
+.footer_btn {
+    width: 307px;
+    height: 87.71px;
+    background: #E76779;
+    border-radius: 60.9127px;
+}
+
+.footer_btn a {
+    font-family: 'Hiragino Maru Gothic Pro', sans-serif;
+    font-size: 29.2381px;
+    line-height: 44px;
+    /* identical to box height */
+    color: #F5F5F2;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    padding: 40px;
+}

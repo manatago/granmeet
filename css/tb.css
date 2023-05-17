@@ -1,0 +1,465 @@
+@media screen and (max-width:768px) {
+
+    /* UNIVERSAL */
+    body {
+        font-family: 'Noto Sans JP', sans-serif;
+        height: 100%;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 27px;
+        letter-spacing: 0.8px;
+        color: #2d2300;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    main {
+        margin: 0 20px;
+    }
+    .sp_btn{
+        display: none;
+    }
+
+    /* HEADER */
+    .header_inner {
+        margin: 10px;
+    }
+
+    .header_logo p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .header_inner .logo {
+        width: 144px;
+    }
+
+    .header_btn {
+        width: 240px;
+        height: 60px;
+    }
+    .header_btn a{
+        font-size: 20px;
+    }
+
+    /* FV */
+    .fv_inner {
+        height: 500px;
+        min-height: auto;
+        position: relative;
+        overflow: hidden;
+        background-position: 65% center;
+    }
+
+    .fv_h1 {
+        position: absolute;
+        bottom: -20px;
+        right: -40px;
+        width: 282px;
+        z-index: 1;
+    }
+
+    /* NAYAMI */
+    .nayami_inner {
+        margin-bottom: 40px;
+    }
+
+    .nayami_box{
+        align-items: center;
+    }
+    .nayami h2 {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .nayami_list {
+        font-size: 16px;
+    }
+
+    .nayami_list li {
+        margin-bottom: 20px;
+    }
+
+    .nayami_list li:after {
+        top: auto;
+        bottom: -19px;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        border: 10px solid transparent;
+        border-top-color: var(--blue);
+    }
+
+    .nayami_list li:first-child:after,
+    .nayami_list li:last-child:after{
+        top: auto;
+        bottom: -19px;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        border: 10px solid transparent;
+        border-top-color: var(--pink);
+    }
+
+    .nayami_box {
+        flex-direction: column;
+    }
+
+    .nayami_img {
+        width: 50%;
+    }
+
+    /* SERVICE */
+    .service h2 {
+        width: auto;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .merit_title {
+        font-size: 16px;
+        width: 140px;
+    }
+
+    .merit_box {
+        gap: 0px;
+    }
+
+    .merit_txt {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .merit {
+        margin: auto;
+    }
+
+    .service_txt {
+        width: auto;
+    }
+
+    .service_inner_box {
+        flex-direction: column;
+    }
+
+    .service_box {
+        position: relative;
+        padding: 30px;
+        width: 480px;
+    }
+
+    .service_box_img {
+        width: 200px;
+    }
+
+    .zoom_img,
+    .line_img {
+        position: inherit;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: translate(0, 0);
+        display: none;
+    }
+
+    .zoom_sp,
+    .line_sp {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .service_box_title {
+        font-size: 16px;
+        line-height: 32px;
+        /* identical to box height, or 200% */
+        text-align: center;
+        color: #E76779;
+    }
+
+    .service h4 {
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0;
+    }
+
+    /* POINT */
+    .point h2 {
+        font-size: 20px;
+        padding-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .point_box {
+        height: auto;
+    }
+
+    .point_box_textbox {
+        padding-top: 20px;
+    }
+
+    .point_box_container {
+        flex-direction: column;
+        margin: 0;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .point_box_img {
+        height: 200px !important;
+    }
+
+    .point .text {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .point h3 {
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 2px;
+    }
+
+    .point p {
+        font-size: 13px;
+    }
+
+    .point_btn {
+        width: 280px;
+        margin: 40px 0;
+    }
+
+    .point_btn a {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    /* INTRODUCTION */
+
+    .introduction h2 {
+        font-size: 24px;
+        padding-top: 40px;
+    }
+
+    .introduction_inner {
+        padding: 0 70px;
+        padding-bottom: 40px;
+        margin: 0 -20px;
+    }
+
+    .introduction h2 {
+        margin-bottom: 20px;
+    }
+
+    .c-inner {
+        padding: 0 20px 0;
+        margin-bottom: 20px;
+    }
+
+    .c-title {
+        font-size: 20px;
+        margin-bottom: 0;
+        line-height: 32px;
+    }
+
+    .c-text p {
+        font-size: 12px;
+    }
+
+    .c-heading {
+        gap: 0px;
+    }
+
+    .c-heading img {
+        height: 50%;
+        width: 70%;
+    }
+
+    .c-heading .img {
+        display: flex;
+        align-items: center;
+        width: 100px;
+    }
+
+    .c-border {
+        padding: 10px 20px;
+    }
+
+    /* HOUKOKU */
+    .houkoku_inner {
+        padding: 40px 0;
+    }
+
+    .houkoku h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .houkoku h4 {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .houkoku p {
+        margin-bottom: 20px;
+    }
+
+    .houkoku_box {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .houkoku_check_list {
+        gap: 20px;
+    }
+
+    .houkoku_text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .houkoku_check {
+        width: 30px;
+    }
+
+    .houkoku_checkbox {
+        gap: 10px;
+    }
+
+    .houkoku_check_list {
+        text-align: center;
+        align-items: center;
+    }
+
+    .houkoku_left {
+        margin: auto;
+        order: 1;
+    }
+
+    .houkoku_right {
+        height: 260px;
+        width: 230px;
+        margin: auto;
+        order: 0;
+    }
+
+    .houkoku_right img {
+        object-fit: cover;
+        width: 400px;
+        height: 230px;
+        border-radius: 20px;
+        object-position: 0 100%;
+    }
+
+
+    .section_btn {
+        padding: 50px 0;
+        text-align: center;
+        background: #ECF5F8;
+        margin: 0 -20px;
+    }
+
+    .btn {
+        width: 280px;
+        height: 72px;
+    }
+
+    .btn a {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    /* PLAN */
+    .plan_inner {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .plan h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .plan .text {
+        font-size: 13px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .plan h3 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    .plan h3 span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .plan_box {
+        padding: 0;
+        gap: 25px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .plan_box-r {
+        padding: 20px;
+    }
+
+    .plan_box_r_up {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .plan_box_r_up span {
+        padding: 0;
+        font-size: 24px;
+    }
+
+    .plan_box_r_dwn-r,
+    .plan_box_r_dwn-l {
+        padding: 40px 30px;
+    }
+
+    /*  */
+    .footer_inner .logo {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .footer_inner {
+        padding: 20px 20px 40px;
+    }
+
+    .footer_inner p:nth-child(3) {
+        margin-bottom: 20px;
+    }
+
+    .footer_btn {
+        width: 280px;
+        height: 72px;
+    }
+
+    .footer_btn a {
+        font-size: 20px;
+    }
+
+    .copyright {
+        font-style: 10px;
+        line-height: 12px;
+        padding: 20px 0;
+    }
+}
