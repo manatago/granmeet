@@ -53,16 +53,51 @@ li {
     --blue: #6FBFEC;
     --darkblue: #194369;
     --black: #333333;
-    --pink:#E76779;
+    --pink: #E76779;
 }
 
-h2{
+h2 {
     font-size: 32px;
     line-height: 46px;
     letter-spacing: 0.8px;
     text-align: center;
+    font-family: 'Hiragino Maru Gothic Pro', "yugothic", "yu gothic", sans-serif;
 }
 
-.sp_btn{
+.sp_btn {
     display: none;
+}
+
+
+/* BTN_ANIMATTION */
+.btnripple3 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--pink);
+    outline: none;
+}
+
+.btnripple3:hover::before {
+    content: '';
+    position: absolute;
+    left: 30%;
+    top: 0;
+    border: 2px solid var(--blue);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 1;
+    animation: 1s circleanime2 forwards;
+}
+
+@keyframes circleanime2 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }

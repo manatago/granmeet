@@ -29,7 +29,7 @@
         width: 200px;
         background: #E76779;
         border-radius: 100px;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 29px;
         /* identical to box height */
         font-family: 'Hiragino Maru Gothic Pro',sans-serif;
@@ -120,8 +120,10 @@
     /* SERVICE */
     .service h2 {
         width: auto;
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 20px;
+        line-height: 32px;
+
     }
 
     .merit_title {
@@ -131,15 +133,34 @@
     .merit_box {
         flex-direction: column;
         gap: 10px;
+        border-radius: 20px;
     }
 
+    .merit_heading{
+        font-size: 20px;
+    }
+    .merit_flex_1,
+    .merit_flex_2{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .merit_flex_2 .merit:nth-child(2) .merit_title{
+        background-color: var(--blue);
+    }
+    .merit_flex_2 .merit:nth-child(1) .merit_title{
+        background-color: var(--pink);
+    }
     .merit_txt {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 20px;
+        max-width: 210px;
     }
 
     .merit {
         margin: auto;
+        padding: 20px;
+        min-height: auto;
+        max-width: auto;
     }
 
     .service_txt {
@@ -237,7 +258,7 @@
     }
 
     .point_btn a {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 32px;
     }
 
@@ -375,7 +396,7 @@
     }
 
     .btn a {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 36px;
     }
 
@@ -454,7 +475,7 @@
     }
 
     .footer_btn a {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .copyright {

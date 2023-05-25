@@ -16,7 +16,7 @@
     font-family: 'Hiragino Maru Gothic Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
     color: #fff;
 }
@@ -142,43 +142,79 @@
     width: 880px;
     margin: 0 auto;
     margin-bottom: 40px;
+    letter-spacing: 2.8px;
+    line-height: 46px;
 }
-
+.blue{
+    color: var(--blue);
+}
+.pink{
+    color: var(--pink);
+}
+.bold{
+    font-size: 40px;
+}
 .merit_box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
+    background: #ECF5F8;
+    padding: 20px 0;
 }
+.merit_heading{
+    font-size: 24px;
+    padding: 10px 0;
+    letter-spacing: 2.4px;
+    font-family: 'Hiragino Maru Gothic Pro', "yugothic", "yu gothic" , sans-serif;
+}
+.merit{
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.merit_flex_1,
+.merit_flex_2{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 
+}
 .merit_title {
     color: #fff;
     background-color: var(--blue);
     font-size: 20px;
     line-height: 29px;
-    width: 185px;
     border-radius: 6px;
     margin-bottom: 8px;
+    margin: 0 auto 10px;
 }
-.merit:nth-child(1) .merit_title{
+.merit_flex_1 .merit:nth-child(1) .merit_title{
     background-color: var(--pink);
 }
-.merit:nth-child(3) .merit_title{
+.merit_flex_2 .merit:nth-child(2) .merit_title{
     background-color: var(--pink);
 }
-
 
 .merit_txt {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
+    text-align: left;
+}
+.merit_txt li{
+    text-align-last: left;
+    margin-bottom: 10px;
+    max-width: 250px;
+    width: 250px;
 }
 
 .service_txt {
     width: 880px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .service_inner_box {
@@ -278,7 +314,8 @@
 .point_box_container {
     display: flex;
     justify-content: space-between;
-    margin: 0 11.7vw;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .point_box {
@@ -670,7 +707,7 @@
 .footer_inner {
     text-align: center;
     background: #ECF5F8;
-    padding: 60px 0;
+    padding: 60px 0 30px;
 }
 
 .footer_inner .logo {
@@ -692,14 +729,32 @@
 
 .footer_btn a {
     font-family: 'Hiragino Maru Gothic Pro', sans-serif;
-    font-size: 29.2381px;
+    font-size: 20px;
     line-height: 44px;
     /* identical to box height */
     color: #F5F5F2;
 }
-
+.footer_menu_wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+.footer_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.footer_menu img{
+    margin: auto;
+    display: block;
+}
+.footer_menu a{
+    font-size: 12px;
+}
 .copyright {
     text-align: center;
     font-size: 12px;
-    padding: 40px;
+    padding: 20px 0 40px;
 }
