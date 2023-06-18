@@ -27,7 +27,7 @@
 
 /* FIRST VIEW */
 .fv_inner {
-    background-image: url(../images/hero_img.jpg);
+    background-image: url(../images/hero_img_pc.jpg);
     background-size: cover;
     background-position: center center;
     min-height: 700px;
