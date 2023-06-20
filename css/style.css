@@ -27,7 +27,7 @@
 
 /* FIRST VIEW */
 .fv_inner {
-    background-image: url(../images/hero_img.png);
+    background-image: url(../images/hero_img_pc.jpg);
     background-size: cover;
     background-position: center center;
     min-height: 700px;
@@ -38,8 +38,10 @@
 .fv_h1 {
     width: 480px;
     height: auto;
-    margin-left: 25px;
-    padding-top: 125px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .fv_h1 img,

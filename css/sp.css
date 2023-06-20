@@ -59,19 +59,22 @@
 
     /* FV */
     .fv_inner {
-        height: 500px;
+        height: 667px;
         min-height: auto;
         position: relative;
         overflow: hidden;
         background-position: 65% center;
+        background-image: url(../images/hero_img_sp.jpg);
     }
 
     .fv_h1 {
         position: absolute;
-        bottom: -20px;
-        right: -40px;
-        width: 282px;
+        left: auto;
+        top: 55%;
+        right: -30px;
+        width: 242px;
         z-index: 1;
+        transform: translate(0% , -55%);
     }
 
     /* NAYAMI */
